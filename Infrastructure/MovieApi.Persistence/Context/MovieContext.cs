@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MovieApi.Domain.Entites;
+using MovieApi.Domain.Entities;
 
 namespace MovieApi.Persistence.Context;
 
