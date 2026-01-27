@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Domain", "Core\Mov
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Persistence", "Infrastructure\MovieApi.Persistence\MovieApi.Persistence.csproj", "{3FFCDE7A-7DC2-4E22-9E40-0D5CB55D1BBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.WebApi", "Presentation\MovieApi.WebApi\MovieApi.WebApi.csproj", "{CB797766-FA37-49D2-91F2-A9EAC82260E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Application", "Core\MovieApi.Application\MovieApi.Application.csproj", "{02EE16D2-D4DC-4441-9C45-5ABF7D6B143F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +30,19 @@ Global
 		{3FFCDE7A-7DC2-4E22-9E40-0D5CB55D1BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FFCDE7A-7DC2-4E22-9E40-0D5CB55D1BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FFCDE7A-7DC2-4E22-9E40-0D5CB55D1BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB797766-FA37-49D2-91F2-A9EAC82260E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB797766-FA37-49D2-91F2-A9EAC82260E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB797766-FA37-49D2-91F2-A9EAC82260E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB797766-FA37-49D2-91F2-A9EAC82260E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EE16D2-D4DC-4441-9C45-5ABF7D6B143F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EE16D2-D4DC-4441-9C45-5ABF7D6B143F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EE16D2-D4DC-4441-9C45-5ABF7D6B143F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EE16D2-D4DC-4441-9C45-5ABF7D6B143F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{016CEA07-2D9F-4BC2-A26B-41EDED429F65} = {2686AC85-83FE-4016-A566-8323AC734012}
 		{3FFCDE7A-7DC2-4E22-9E40-0D5CB55D1BBE} = {BC9AA332-9581-425C-8C26-D8B1B0C79136}
+		{CB797766-FA37-49D2-91F2-A9EAC82260E5} = {72664D33-4A9C-424D-85A6-3200C1EA1379}
+		{02EE16D2-D4DC-4441-9C45-5ABF7D6B143F} = {2686AC85-83FE-4016-A566-8323AC734012}
 	EndGlobalSection
 EndGlobal

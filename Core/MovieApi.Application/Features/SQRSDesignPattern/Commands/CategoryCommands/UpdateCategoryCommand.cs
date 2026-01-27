@@ -2,5 +2,6 @@ namespace MovieApi.Application.Features.SQRSDesignPattern.Commands.CategoryComma
 
 public class UpdateCategoryCommand
 {
-    
+    public int CategoryId { get; set; }
+    public required string CategoryName { get; set; }
 }

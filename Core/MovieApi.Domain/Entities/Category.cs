@@ -1,7 +1,7 @@
-namespace MovieApi.Domain.Entites;
+namespace MovieApi.Domain.Entities;
 
 public class Category
 {
     public int CategoryId { get; set; }
-    public String CategoryName { get; set; }
+    public required string CategoryName { get; set; }
 }

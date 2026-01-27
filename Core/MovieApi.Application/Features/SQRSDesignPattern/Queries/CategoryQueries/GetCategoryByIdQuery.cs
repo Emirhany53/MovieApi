@@ -2,5 +2,5 @@ namespace MovieApi.Application.Features.SQRSDesignPattern.Queries.CategoryQuerie
 
 public class GetCategoryByIdQuery
 {
-    
+    public int CategoryId { get; set; }
 }

@@ -1,8 +1,8 @@
-namespace MovieApi.Domain.Entites;
+namespace MovieApi.Domain.Entities;
 
 public class Tag
 {
     public int TagId { get; set; }
-    public string Title { get; set; }
+    public required string Title { get; set; }
     
 }
