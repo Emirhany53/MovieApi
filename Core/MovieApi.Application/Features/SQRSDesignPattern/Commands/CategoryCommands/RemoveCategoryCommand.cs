@@ -2,5 +2,10 @@ namespace MovieApi.Application.Features.SQRSDesignPattern.Commands.CategoryComma
 
 public class RemoveCategoryCommand
 {
+    public RemoveCategoryCommand(int categoryId)
+    {
+        CategoryId = categoryId;
+    }
+
     public int CategoryId { get; set; }
 }
