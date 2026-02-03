@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using MovieApi.Application.Features.SQRSDesignPattern.Commands.CategoryCommands;
-using MovieApi.Application.Features.SQRSDesignPattern.Handlers.CategoryHandlers;
-using MovieApi.Application.Features.SQRSDesignPattern.Queries.CategoryQueries;
+using MovieApi.Application.Features.CQRSDesignPattern.Commands.CategoryCommands;
+using MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandlers;
+using MovieApi.Application.Features.CQRSDesignPattern.Queries.CategoryQueries;
 
 namespace MovieApi.WebApi.Controllers;
 
