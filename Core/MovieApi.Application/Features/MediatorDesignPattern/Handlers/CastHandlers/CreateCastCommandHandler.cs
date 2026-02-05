@@ -1,5 +1,6 @@
 using MediatR;
 using MovieApi.Application.Features.MediatorDesignPattern.Commands.CastCommands;
+using MovieApi.Domain.Entities;
 using MovieApi.Persistence.Context;
 using NuGet.Protocol.Plugins;
 
@@ -14,8 +15,17 @@ public class CreateCastCommandHandler:IRequestHandler<CreateCastCommand>
         _context = context;
     }
 
-    public Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
+    public async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        _context.Casts.Add(new Cast
+        {
+            Biography = request.Biography,
+            ImageUrl = request.ImageUrl,
+            Name = request.Name,
+            Overview = request.Overview,
+            Surname = request.Surname,
+            Title = request.Title
+        });
+        await _context.SaveChangesAsync();
     }
 }
