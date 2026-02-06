@@ -2,11 +2,11 @@ using MediatR;
 using MovieApi.Application.Features.MediatorDesignPattern.Commands.CastCommands;
 using MovieApi.Domain.Entities;
 using MovieApi.Persistence.Context;
-using NuGet.Protocol.Plugins;
+
 
 namespace MovieApi.Application.Features.MediatorDesignPattern.Handlers.CastHandlers;
 
-public class CreateCastCommandHandler:IRequestHandler<CreateCastCommand>
+public class CreateCastCommandHandler:IRequestHandler<CreateCastCommand> /*CreateCastCommand gelirse bu metodu çağır bunu işleyen benim*/
 {
     private readonly MovieContext _context;
 
@@ -15,7 +15,8 @@ public class CreateCastCommandHandler:IRequestHandler<CreateCastCommand>
         _context = context;
     }
 
-    public async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
+    public
+        async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
     {
         _context.Casts.Add(new Cast
         {
