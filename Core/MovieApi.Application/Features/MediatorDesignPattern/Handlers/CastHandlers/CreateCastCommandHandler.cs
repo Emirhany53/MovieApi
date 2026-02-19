@@ -15,8 +15,7 @@ public class CreateCastCommandHandler:IRequestHandler<CreateCastCommand> /*Creat
         _context = context;
     }
 
-    public
-        async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
+    public async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
     {
         _context.Casts.Add(new Cast
         {
