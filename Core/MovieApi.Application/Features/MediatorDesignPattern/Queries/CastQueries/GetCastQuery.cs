@@ -8,10 +8,10 @@ namespace MovieApi.Application.Features.MediatorDesignPattern.Queries.CastQuerie
 public class GetCastQuery:IRequest<List<GetCastQueryResult>>, IRequest<Category>, IRequest<GetCastQueryHandler>, IRequest<List<GetCastQueryHandler>>
 {
     public int CastId { get; set; }
-    public required string Title { get; set; }
-    public required string Name  {get; set;}
-    public required string Surname {get; set;}
-    public required string ImageUrl {get; set;}
+    public string Title { get; set; }
+    public string Name  {get; set;}
+    public string Surname {get; set;}
+    public string ImageUrl {get; set;}
     public string? Overview {get; set;}
     public string? Biography {get; set;}
 }
